@@ -1,0 +1,23 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Faça seu pedido</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Seu Nome" [(ngModel)]="NOME"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" placeholder="Seu pedido" [(ngModel)]="PEDIDO"></ion-input>
+    </ion-item>
+    <button ion-button full (click)="enviar()">Enviar</button>
+  </ion-list>
+</ion-content>
